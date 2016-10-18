@@ -22,7 +22,6 @@ describe('index', () => {
   describe('Konami code', () => {
     it('triggers an alert if the right code is entered', () => {
       init()
-
       window.alert = expect.createSpy()
 
       for (let i = 0, l = code.length; i < l; i++) {
